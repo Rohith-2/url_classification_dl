@@ -1,5 +1,9 @@
-
-FinalDataset/._.DS_Store
+*._
+*.ipynb_checkpoints
+*.DS_Store
+FinalDataset/._URL
+*.gitignore
+._FinalDataset
 FinalDataset/._All.csv
 FinalDataset/._All_BestFirst.csv
 FinalDataset/._All_BestFirst_test.csv
@@ -22,11 +26,8 @@ FinalDataset/._Spam_BestFirst.csv
 FinalDataset/._Spam_BestFirst_test.csv
 FinalDataset/._Spam_Infogain.csv
 FinalDataset/._Spam_Infogain_test.csv
-FinalDataset/._URL
-FinalDataset/URL/._spam_dataset.csv
-FinalDataset/URL/._phishing_dataset.csv
-FinalDataset/URL/._Malware_dataset.csv
-FinalDataset/URL/._DefacementSitesURLFiltered.csv
 FinalDataset/URL/._Benign_list_big_final.csv
-FinalDataset/.DS_Store
-Notebook/.ipynb_checkpoints/T-checkpoint.ipynb
+FinalDataset/URL/._DefacementSitesURLFiltered.csv
+FinalDataset/URL/._Malware_dataset.csv
+FinalDataset/URL/._phishing_dataset.csv
+FinalDataset/URL/._spam_dataset.csv
