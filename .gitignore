@@ -31,3 +31,9 @@ FinalDataset/URL/._DefacementSitesURLFiltered.csv
 FinalDataset/URL/._Malware_dataset.csv
 FinalDataset/URL/._phishing_dataset.csv
 FinalDataset/URL/._spam_dataset.csv
+scripts/._Benign_list_big_final.csv
+scripts/._data_creation_v2.py
+scripts/._DefacementSitesURLFiltered.csv
+scripts/._Malware_dataset.csv
+scripts/._phishing_dataset.csv
+scripts/._spam_dataset.csv
