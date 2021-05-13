@@ -37,3 +37,5 @@ scripts/._DefacementSitesURLFiltered.csv
 scripts/._Malware_dataset.csv
 scripts/._phishing_dataset.csv
 scripts/._spam_dataset.csv
+FinalDataset/._URL_features.csv
+Notebook/._nn_Training.ipynb
