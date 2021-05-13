@@ -132,10 +132,9 @@ if __name__ == "__main__":
 
     emp =UrlFeaturizer("").run().keys()
     A = pd.DataFrame(columns = emp)
-
+    t=[]
     for j in l:
         print(j)
-        t=[]
         d=pd.read_csv(j,header=None)
         dd=d.to_numpy().flatten()
         for i in tqdm(dd):
