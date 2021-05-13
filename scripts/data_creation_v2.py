@@ -65,28 +65,31 @@ class UrlFeaturizer(object):
      #   return self.response == 200
 
     def daysSinceRegistration(self):
-        if self.whois and self.whois['creation_date']:
+        if self.whois!=None and "creation_date" in self.whois.keys() and self.whois['creation_date']!=None:
             d = self.whois['creation_date']
-            if type(d)==list:
-                diff = self.today - self.whois['creation_date'][0]
-            else:
-                diff = self.today - self.whois['creation_date']
+            #print(self.today - d)
+            try:
+                diff = self.today - d
+            except:
+                diff = self.today - d[0]
             diff = str(diff).split(' days')[0]
+            #print(diff)
             return diff
+        
         else:
-            return 0
+            return -1
 
     def daysSinceExpiration(self):
-        if self.whois and self.whois['expiration_date']:
+        if self.whois!=None and "expiration_date" in self.whois.keys() and self.whois['expiration_date']!=None:
             d = self.whois['expiration_date']
-            if type(d)==list:
-                diff =  self.whois['expiration_date'][0] - self.today 
-            else:
-                diff = self.whois['expiration_date'] - self.today 
+            try:
+                diff =  d - self.today 
+            except:
+                diff = d[0] - self.today 
             diff = str(diff).split(' days')[0]
             return diff
         else:
-            return 0
+            return -1
 
     ## URL Page Features
   
@@ -137,7 +140,7 @@ if __name__ == "__main__":
         print(j)
         d=pd.read_csv(j,header=None)
         dd=d.to_numpy().flatten()
-        for i in tqdm(dd):
+        for i in dd:
             temp=UrlFeaturizer(i).run()
             temp["File"]=j.split(".")[0]
             t.append(temp)
