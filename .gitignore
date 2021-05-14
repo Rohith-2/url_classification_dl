@@ -39,3 +39,5 @@ scripts/._phishing_dataset.csv
 scripts/._spam_dataset.csv
 FinalDataset/._URL_features.csv
 Notebook/._nn_Training.ipynb
+._requirements.txt
+scripts/__pycache__/data_creation_v3.cpython-38.pyc

@@ -65,7 +65,7 @@ class UrlFeaturizer(object):
      #   return self.response == 200
 
     def daysSinceRegistration(self):
-        if self.whois!=None and "creation_date" in self.whois.keys() and self.whois['creation_date']!=None:
+        if self.whois!=None and "creation_date" in self.whois.keys() and self.whois['creation_date']!=None and type(self.whois['creation_date'])==str:
             d = self.whois['creation_date']
             #print(self.today - d)
             try:
@@ -80,7 +80,7 @@ class UrlFeaturizer(object):
             return -1
 
     def daysSinceExpiration(self):
-        if self.whois!=None and "expiration_date" in self.whois.keys() and self.whois['expiration_date']!=None:
+        if self.whois!=None and "expiration_date" in self.whois.keys() and self.whois['expiration_date']!=None and type(self.whois['expiration_date'])==str:
             d = self.whois['expiration_date']
             try:
                 diff =  d - self.today 
