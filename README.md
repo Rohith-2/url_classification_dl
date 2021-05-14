@@ -4,7 +4,7 @@ Authors:
 Aaditya Jain    
 [Anirudh Bhaskar](https://github.com/AnirudhBhaskar21)    
 [Srikanth]( https://github.com/Srikanth-AIE)    
-Rohith Ramakrishnan   
+[Rohith Ramakrishnan](https://github.com/Rohith-2)
 <hr style=\"border:0.5px solid gray\"> </hr>
 
 ## Set-Up:
