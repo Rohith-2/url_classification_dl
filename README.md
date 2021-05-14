@@ -1,5 +1,5 @@
 # Url Classification 
-### 19AIE211-Introduction to Computer Networksis End Project   
+### 19AIE211-Introduction to Computer Networks End Project   
 Authors:  
 Aaditya Jain    
 [Anirudh Bhaskar](https://github.com/AnirudhBhaskar21)    
@@ -18,3 +18,7 @@ pip install -r requirements.txt
 cd scripts/
 python extract_Features.py
 ```
+
+<hr style=\"border:0.5px solid gray\"> </hr>
+## References:  
+https://towardsdatascience.com/predicting-the-maliciousness-of-urls-24e12067be5
