@@ -19,6 +19,7 @@ cd scripts/
 python extract_Features.py
 ```
 
-<hr style=\"border:0.5px solid gray\"> </hr>
+<hr style=\"border:0.5px solid gray\"> </hr>    
+
 ## References:  
 https://towardsdatascience.com/predicting-the-maliciousness-of-urls-24e12067be5
