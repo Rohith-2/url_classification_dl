@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 from pyquery import PyQuery
 from requests import get
+
 class UrlFeaturizer(object):
     def __init__(self, url):
         self.url = url
@@ -135,22 +136,25 @@ class UrlFeaturizer(object):
             return 0
 
     def scriptToSpecialCharsRatio(self):
-        if self.pq is not None:
-            sscr = self.scriptLength()/self.specialCharacters()
+        v = self.specialCharacters()
+        if self.pq is not None and v!=0:
+            sscr = self.scriptLength()/v
         else:
             sscr = 0
         return sscr
 
     def scriptTobodyRatio(self):
-        if self.pq is not None:
-            sbr = self.scriptLength()/self.bodyLength()
+        v = self.bodyLength()
+        if self.pq is not None and v!=0:
+            sbr = self.scriptLength()/v
         else:
             sbr = 0
         return sbr
 
     def bodyToSpecialCharRatio(self):
-        if self.pq is not None:
-            bscr = self.specialCharacters()/self.bodyLength()
+        v = self.bodyLength()
+        if self.pq is not None and v!=0:
+            bscr = self.specialCharacters()/v
         else:
             bscr = 0
         return bscr
