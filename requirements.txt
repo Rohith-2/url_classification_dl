@@ -3,3 +3,5 @@ datetime
 python-whois-extended
 numpy
 tqdm
+pyquery
+requests

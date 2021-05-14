@@ -8,8 +8,8 @@ from tqdm import tqdm
 import os
 os.chdir('../FinalDataset/URL/')
 
-#l = ['DefacementSitesURLFiltered.csv','phishing_dataset.csv','Malware_dataset.csv','spam_dataset.csv','Benign_list_big_final.csv']
-l = ['phishing_dataset.csv']#,'Malware_dataset.csv','spam_dataset.csv','Benign_list_big_final.csv']
+l = ['DefacementSitesURLFiltered.csv','phishing_dataset.csv','Malware_dataset.csv','spam_dataset.csv','Benign_list_big_final.csv']
+#l = ['phishing_dataset.csv']#,'Malware_dataset.csv','spam_dataset.csv','Benign_list_big_final.csv']
 
 emp = data_creation_v3.UrlFeaturizer("").run().keys()
 A = pd.DataFrame(columns = emp)
@@ -21,7 +21,7 @@ for j in l:
         temp=data_creation_v3.UrlFeaturizer(i).run()
         temp["File"]=j.split(".")[0]
         t.append(temp)
-        print(t)
+        #print(t)
 A=A.append(t)
-#os.chdir('../')
+os.chdir('../')
 A.to_csv("URL_features_v3.csv")
