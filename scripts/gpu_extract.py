@@ -9,8 +9,14 @@ from tqdm import tqdm
 import os
 os.chdir('../FinalDataset/URL/')
 
-@jit(target ="cuda")
-def run(l,t):
+#@jit(target ="cuda")
+def t():
+    l = ['DefacementSitesURLFiltered.csv','phishing_dataset.csv','Malware_dataset.csv','spam_dataset.csv','Benign_list_big_final.csv']
+    #l = ['phishing_dataset.csv','Malware_dataset.csv']#,'spam_dataset.csv','Benign_list_big_final.csv']
+
+    emp = data_creation_v3.UrlFeaturizer("").run().keys()
+    A = pd.DataFrame(columns = emp)
+    t=[]
     for j in l:
         print(j)
         d=pd.read_csv(j,header=None).to_numpy().flatten()
@@ -20,15 +26,7 @@ def run(l,t):
             t.append(temp)
             #print(t)
     A=A.append(t)
-    return A
-
-if __name__=="__main__":
-#l = ['DefacementSitesURLFiltered.csv','phishing_dataset.csv','Malware_dataset.csv','spam_dataset.csv','Benign_list_big_final.csv']
-    l = ['phishing_dataset.csv','Malware_dataset.csv']#,'spam_dataset.csv','Benign_list_big_final.csv']
-
-    emp = data_creation_v3.UrlFeaturizer("").run().keys()
-    A = pd.DataFrame(columns = emp)
-    t=[]
-    A = run(l,t)
     os.chdir('../')
     A.to_csv("URL_features_v3.1.csv")
+if __name__=="__main__":
+    t()
