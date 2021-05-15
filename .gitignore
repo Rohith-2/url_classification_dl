@@ -41,3 +41,6 @@ FinalDataset/._URL_features.csv
 Notebook/._nn_Training.ipynb
 ._requirements.txt
 scripts/__pycache__/data_creation_v3.cpython-38.pyc
+scripts/._data_creation_v3.py
+scripts/._extract_Features.py
+scripts/__pycache__/data_creation_v3.cpython-39.pyc
