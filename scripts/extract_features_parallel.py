@@ -1,5 +1,4 @@
-import numba
-from numba.special import prange
+from numba import njit, prange
 import data_creation_v3
 import datetime
 import math
@@ -11,7 +10,7 @@ import os
 print(os.getcwd())
 os.chdir(os.getcwd()+'/FinalDataset/URL/')
 
-@numba.jit(nopython=True, parallel=True)
+@njit(nopython=True, parallel=True)
 def run():
     l = ['DefacementSitesURLFiltered.csv','phishing_dataset.csv','Malware_dataset.csv','spam_dataset.csv','Benign_list_big_final.csv']
     emp = data_creation_v3.UrlFeaturizer("").run().keys()
