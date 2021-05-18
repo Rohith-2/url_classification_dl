@@ -8,8 +8,8 @@ Authors:
 <hr style=\"border:0.5px solid gray\"> </hr>
 
 ## Set-Up:
-Pre-requisites : conda and git  
-Please Note : All System Paths in the scripts, are coded in UNIX OS format, please convert '/' to "\\" for Windows OS.
+__Pre-requisites : [conda](https://repo.anaconda.com/) and [git](https://git-scm.com/)__   
+*Please Note : All System Paths in the scripts, are coded in UNIX OS format, please convert '/' to '\\\ ' for Windows OS.*
 ```
 git clone https://github.com/Rohith-2/url_classification_dl.git
 cd url_classification_dl
