@@ -9,6 +9,7 @@ Authors:
 
 ## Set-Up:
 Pre-requisites : conda and git  
+Please Note : All System Paths in the scripts, are coded in UNIX OS format, please convert '/' to "\\" for Windows OS.
 ```
 git clone https://github.com/Rohith-2/url_classification_dl.git
 cd url_classification_dl
@@ -29,4 +30,4 @@ https://towardsdatascience.com/predicting-the-maliciousness-of-urls-24e12067be5
 
 > We would like to thank our professor [Premjith B](https://github.com/premjithb) for the assistance and guidance.    
 
-Please Note : All System Paths are coded in UNIX OS format, please change '/' in the codes with "\\" for Windows OS.
+
