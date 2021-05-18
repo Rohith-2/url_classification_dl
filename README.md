@@ -15,6 +15,9 @@ cd url_classification_dl
 conda create -n pyenv python=3.8
 conda activate pyenv
 pip install -r requirements.txt
+```
+Training :    
+```
 cd scripts/
 python extract_Features.py
 ```
