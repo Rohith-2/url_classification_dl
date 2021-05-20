@@ -36,6 +36,7 @@ Testing:
 cd scripts/
 python predict.py
 ``` 
+If you only wish to use the pre-trained model, please check [releases](https://github.com/Rohith-2/url_classification_dl/releases)  
 <hr style=\"border:0.5px solid gray\"> </hr>    
   
 ## Data Description via Extracted Features:
