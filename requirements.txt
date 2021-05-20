@@ -6,3 +6,5 @@ tqdm
 pyquery
 requests
 interruptingcow 
+sklearn
+jedi
