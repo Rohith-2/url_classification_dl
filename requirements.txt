@@ -9,3 +9,4 @@ interruptingcow
 sklearn
 jedi
 keras
+tensorflow
