@@ -29,7 +29,8 @@ Training:
 cd scripts/
 python nn_Training.py
 ```
-The output of the trained model is exported to the [models](https://github.com/Rohith-2/url_classification_dl/blob/main/models).
+The output of the trained model is exported to the [models](https://github.com/Rohith-2/url_classification_dl/blob/main/models).  
+  
 Testing:
 ```
 cd scripts/
