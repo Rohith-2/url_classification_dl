@@ -28,6 +28,12 @@ Training:
 __under progress__. 
   
 <hr style=\"border:0.5px solid gray\"> </hr>    
+  
+## Features Extracted :
+  
+![1_YW3D20o-cXrd-WzdYutUNg](https://user-images.githubusercontent.com/55501708/118959890-5b153100-b980-11eb-8c86-71e42c63329b.png)
+
+<hr style=\"border:0.5px solid gray\"> </hr>    
 
 ## References:  
 https://towardsdatascience.com/predicting-the-maliciousness-of-urls-24e12067be5  
