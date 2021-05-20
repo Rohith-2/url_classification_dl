@@ -71,3 +71,5 @@ FinalDataset/._feature_data.csv
 FinalDataset/URL/._URL_features.csv
 FinalDataset/._feature.csv
 scripts/._DenseNN_Train.py
+FinalDataset/._Feature_Corr.png
+FinalDataset/._Feature_Plot.png
