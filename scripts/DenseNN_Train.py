@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 import os
 import pandas as pd
 import tensorflow as ts
@@ -13,8 +10,7 @@ from keras.utils.np_utils import to_categorical
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score,f1_score,precision_score,recall_score
 from sklearn.preprocessing import MinMaxScaler
-from keras.utils import np_utils
-from keras import backend as K
+from ts.keras.utils import np_utils
 
 
 # In[2]:
@@ -142,5 +138,8 @@ print(classification_report(y_test, predicted, target_names=target_names))
 
 os.chdir("../")
 os.chdir("models")
-model.save("Model_v1")
+model.save("Model_v1.h5")
+np.save('lblenc.npy', encoder.classes_)
+scalerfile = 'scaler.sav'
+pickle.dump(scaler, open(scalerfile, 'wb'))
 

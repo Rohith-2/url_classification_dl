@@ -1,4 +1,3 @@
-#!/opt/intel/oneapi/intelpython/latest/bin/python
 import data_creation_v3
 import datetime
 import math
