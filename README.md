@@ -30,7 +30,9 @@ cd scripts/
 python DenseNN_Train.py
 ```
 The output of the trained model is exported to the [models](https://github.com/Rohith-2/url_classification_dl/blob/main/models).  
-  
+The output metrics for the latest model:  
+![Screenshot 2021-05-20 at 6 32 01 PM](https://user-images.githubusercontent.com/55501708/118983160-c1f31400-b999-11eb-8fd9-dd54a204f6d0.png)
+    
 <hr style=\"border:0.5px solid gray\"> </hr>    
   
 ## Features Extracted :
