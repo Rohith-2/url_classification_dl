@@ -11,8 +11,8 @@ import os
 print(os.getcwd())
 os.chdir('../FinalDataset/URL')
 
-#l = ['DefacementSitesURLFiltered.csv','phishing_dataset.csv','Malware_dataset.csv','spam_dataset.csv','Benign_list_big_final.csv']
-l = ['phishing_dataset.csv']
+l = ['DefacementSitesURLFiltered.csv','phishing_dataset.csv','Malware_dataset.csv','spam_dataset.csv','Benign_list_big_final.csv']
+#l = ['phishing_dataset.csv']
 
 
 emp = data_creation_v3.UrlFeaturizer("").run().keys()
@@ -31,4 +31,4 @@ for j in l:
             pass 
 A=A.append(t)
 os.chdir('../')
-A.to_csv("phishing_features.csv")
+A.to_csv("features.csv")
