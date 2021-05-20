@@ -23,7 +23,7 @@ cd scripts/
 python extract_Features.py
 ```
 The features extracted are explained and visualised in this [Notebook](https://github.com/Rohith-2/url_classification_dl/blob/main/Notebook/DataProcessing.ipynb). The output training data after feature extraction is labbeled as [features.csv](https://github.com/Rohith-2/url_classification_dl/blob/main/FinalDataset/feature.csv) under FinalDataset.  
-Feature ectraction for each category of URLs took on an average 18-26 hours, which extends the total extration time as 95 hours on an average.  
+Feature ectraction for each category of URLs took on an average 18-26 hours, which extends the total of 95 hours on an average.  
   
 Training:  
 __under progress__. 
