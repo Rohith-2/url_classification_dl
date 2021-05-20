@@ -8,7 +8,7 @@ Authors:
 <hr style=\"border:0.5px solid gray\"> </hr>
 
 ## Set-Up:
-__Pre-requisites : [conda](https://repo.anaconda.com/) and [git](https://git-scm.com/)__   
+__Pre-requisites :__ [conda](https://repo.anaconda.com/) and [git](https://git-scm.com/) 
 *Please Note : All System Paths in the scripts, are coded in UNIX OS format, please convert '/' to "\\\ " for Windows OS.*
 ```
 git clone https://github.com/Rohith-2/url_classification_dl.git
@@ -33,21 +33,20 @@ The output of the trained model is exported to the [models](https://github.com/R
     
 <hr style=\"border:0.5px solid gray\"> </hr>    
   
-## Features Extracted :
+## Data Description via Extracted Features:
   
-![1_YW3D20o-cXrd-WzdYutUNg](https://user-images.githubusercontent.com/55501708/118959890-5b153100-b980-11eb-8c86-71e42c63329b.png)
+![1_YW3D20o-cXrd-WzdYutUNg](https://user-images.githubusercontent.com/55501708/118959890-5b153100-b980-11eb-8c86-71e42c63329b.png)  
+
+  
+Plot depecting numerous features normalised(ranging from 0 to 1) and the mean of all the classes. 
+![Feature_Plot](https://user-images.githubusercontent.com/55501708/118984429-1f3b9500-b99b-11eb-8ec3-46e264cb95a4.png)
+
+## Performance metric:  
+![Screenshot 2021-05-20 at 6 32 01 PM](https://user-images.githubusercontent.com/55501708/118983160-c1f31400-b999-11eb-8fd9-dd54a204f6d0.png)  
 
 <hr style=\"border:0.5px solid gray\"> </hr>   
 
-## Data Description via Extracted Features:
-
-
-The output metrics for the latest model:  
-![Screenshot 2021-05-20 at 6 32 01 PM](https://user-images.githubusercontent.com/55501708/118983160-c1f31400-b999-11eb-8fd9-dd54a204f6d0.png)
-
-## References:  
-https://towardsdatascience.com/predicting-the-maliciousness-of-urls-24e12067be5  
-
-> We would like to thank our professor [Premjith B](https://github.com/premjithb) for the assistance and guidance.    
+## Acknowledgment:  
+__We would like to thank our professor [Premjith B](https://github.com/premjithb) for the assistance and guidance.__
 
 
