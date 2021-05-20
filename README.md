@@ -17,12 +17,16 @@ conda create -n pyenv python=3.8
 conda activate pyenv
 pip install -r requirements.txt
 ```
-Training :    
+Feature Extraction :    
 ```
 cd scripts/
 python extract_Features.py
 ```
+The features extracted are explained and visualised in this [Notebook](https://github.com/Rohith-2/url_classification_dl/blob/main/Notebook/DataProcessing.ipynb). The output training data after feature extraction is labbeled as [features.csv](https://github.com/Rohith-2/url_classification_dl/blob/main/FinalDataset/feature.csv) under FinalDataset.  
 
+Training:
+__under progress__. 
+  
 <hr style=\"border:0.5px solid gray\"> </hr>    
 
 ## References:  
