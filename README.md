@@ -27,10 +27,14 @@ The features extracted are explained and visualised in this [Notebook](https://g
 Training:
 ```
 cd scripts/
-python DenseNN_Train.py
+python nn_Training.py
 ```
-The output of the trained model is exported to the [models](https://github.com/Rohith-2/url_classification_dl/blob/main/models).  
-    
+The output of the trained model is exported to the [models](https://github.com/Rohith-2/url_classification_dl/blob/main/models).
+Testing:
+```
+cd scripts/
+python predict.py
+``` 
 <hr style=\"border:0.5px solid gray\"> </hr>    
   
 ## Data Description via Extracted Features:
