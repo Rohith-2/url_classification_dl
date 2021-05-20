@@ -13,7 +13,7 @@ __Pre-requisites :__ [conda](https://repo.anaconda.com/) and [git](https://git-s
 ```
 git clone https://github.com/Rohith-2/url_classification_dl.git
 cd url_classification_dl
-conda create -n pyenv python=3.8
+conda create -n pyenv python=3.8.5
 conda activate pyenv
 pip install -r requirements.txt
 ```
