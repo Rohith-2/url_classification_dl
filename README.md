@@ -46,9 +46,7 @@ Plot depecting numerous features normalised(ranging from 0 to 1) and the mean of
 
 <hr style=\"border:0.5px solid gray\"> </hr>   
 
-## References:  
-https://towardsdatascience.com/predicting-the-maliciousness-of-urls-24e12067be5  
-
-> We would like to thank our professor [Premjith B](https://github.com/premjithb) for the assistance and guidance.    
+## Acknowledgment:  
+__We would like to thank our professor [Premjith B](https://github.com/premjithb) for the assistance and guidance.__
 
 
