@@ -6,10 +6,10 @@ import numpy as np
 import whois
 from tqdm import tqdm
 import os
-os.chdir('../FinalDataset/URL/')
+os.chdir('..\\FinalDataset\\URL')
 
 #l = ['DefacementSitesURLFiltered.csv','phishing_dataset.csv','Malware_dataset.csv','spam_dataset.csv','Benign_list_big_final.csv']
-l = ['phishing_dataset.csv','Malware_dataset.csv']#,'spam_dataset.csv','Benign_list_big_final.csv']
+l = ['Malware_dataset.csv']#,'spam_dataset.csv','Benign_list_big_final.csv']
 
 emp = data_creation_v3.UrlFeaturizer("").run().keys()
 A = pd.DataFrame(columns = emp)
@@ -24,4 +24,4 @@ for j in l:
         #print(t)
 A=A.append(t)
 os.chdir('../')
-A.to_csv("URL_features_v3.1.csv")
+A.to_csv("Malware_features.csv")
