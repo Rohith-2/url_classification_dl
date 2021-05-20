@@ -8,7 +8,7 @@ Authors:
 <hr style=\"border:0.5px solid gray\"> </hr>
 
 ## Set-Up:
-__Pre-requisites :__ [conda](https://repo.anaconda.com/) and [git](https://git-scm.com/) 
+__Pre-requisites :__ [conda](https://repo.anaconda.com/) and [git](https://git-scm.com/)     
 *Please Note : All System Paths in the scripts, are coded in UNIX OS format, please convert '/' to "\\\ " for Windows OS.*
 ```
 git clone https://github.com/Rohith-2/url_classification_dl.git
