@@ -30,8 +30,6 @@ cd scripts/
 python DenseNN_Train.py
 ```
 The output of the trained model is exported to the [models](https://github.com/Rohith-2/url_classification_dl/blob/main/models).  
-The output metrics for the latest model:  
-![Screenshot 2021-05-20 at 6 32 01 PM](https://user-images.githubusercontent.com/55501708/118983160-c1f31400-b999-11eb-8fd9-dd54a204f6d0.png)
     
 <hr style=\"border:0.5px solid gray\"> </hr>    
   
@@ -39,7 +37,13 @@ The output metrics for the latest model:
   
 ![1_YW3D20o-cXrd-WzdYutUNg](https://user-images.githubusercontent.com/55501708/118959890-5b153100-b980-11eb-8c86-71e42c63329b.png)
 
-<hr style=\"border:0.5px solid gray\"> </hr>    
+<hr style=\"border:0.5px solid gray\"> </hr>   
+
+## Data Description via Extracted Features:
+
+
+The output metrics for the latest model:  
+![Screenshot 2021-05-20 at 6 32 01 PM](https://user-images.githubusercontent.com/55501708/118983160-c1f31400-b999-11eb-8fd9-dd54a204f6d0.png)
 
 ## References:  
 https://towardsdatascience.com/predicting-the-maliciousness-of-urls-24e12067be5  
