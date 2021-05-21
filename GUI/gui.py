@@ -12,7 +12,9 @@ import time
 from PIL import Image
 st.set_option('deprecation.showPyplotGlobalUse', False)
 import matplotlib.pyplot as plt
-
+l = os.getcwd()
+if(l!='/app/url_classification_dl/GUI/'):
+     os.chdir('/app/url_classification_dl/GUI/')
 order = ['bodyLength', 'bscr', 'dse', 'dsr', 'entropy', 'hasHttp', 'hasHttps',
        'has_ip', 'numDigits', 'numImages', 'numLinks', 'numParams',
        'numTitles', 'num_%20', 'num_@', 'sbr', 'scriptLength', 'specialChars',
@@ -90,6 +92,7 @@ if __name__ == '__main__':
 	submit = st.button('Predict')
 	if (user_input==""):
 		st.write("Enter Valid URL")
+		
 	if submit and user_input!="":
 		pred = encoder.inverse_transform(predicted)[0]
 		st.header("Type of URL : "+pred)
