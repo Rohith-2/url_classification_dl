@@ -92,7 +92,7 @@ if __name__ == '__main__':
 	submit = st.button('Predict')
 	if (user_input==""):
 		st.write("Enter Valid URL")
-		
+
 	if submit and user_input!="":
 		pred = encoder.inverse_transform(predicted)[0]
 		st.header("Type of URL : "+pred)
@@ -132,7 +132,7 @@ if __name__ == '__main__':
 
 		st.write("For more information regarding the features extracted, please visit [github](https://github.com/Rohith-2/url_classification_dl)")
 		st.header("Extracted Features vs Safe URL")
-		st.subheader("Given below are the features extracted from the URL and the values of these features are plotted along x-axis with the features on the y-axis.")
+		st.text("Given below are the features extracted from the URL and the values of these features are plotted along x-axis with the features on the y-axis.")
 		plt.figure(figsize=(12,12))
 		plt.plot(scaler.transform(test)[0],order,color='red', marker='>',linewidth=0.65,linestyle=":",alpha=0.5)
 		plt.plot(ben,order,marker='o',linewidth=0.65,linestyle="--",alpha=0.5)
