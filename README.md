@@ -1,6 +1,5 @@
-# Url Feature Extraction & Classification 
-### 19AIE211-Introduction to Computer Networks End Project   
-Using Neural Networks to classify various URLs  
+# Url Feature Extraction & Classification  
+### Using Neural Networks to classify various URLs  
   
 Authors:  
 > [Aaditya Jain](https://github.com/aadityajain1)    
