@@ -71,10 +71,10 @@ if __name__ == '__main__':
 	for i in order:
 	    test.append(a[i])
 	encoder = LabelEncoder()
-	encoder.classes_ = np.load('lblenc_v1.npy',allow_pickle=True)
-	scalerfile = 'scaler.sav'
+	encoder.classes_ = np.load(l+'/GUI/lblenc_v1.npy',allow_pickle=True)
+	scalerfile = l+'/GUI/scaler.sav'
 	scaler = pickle.load(open(scalerfile, 'rb'))
-	model = load_model("Model_v2.h5")#, custom_objects={'f1_m':f1_m,"precision_m":precision_m, "recall_m":recall_m})
+	model = load_model(l+'/GUI/Model_v2.h5')#, custom_objects={'f1_m':f1_m,"precision_m":precision_m, "recall_m":recall_m})
 	test = pd.DataFrame(test).replace(True,1).replace(False,0).to_numpy().reshape(1,-1)
 	t = Timer()
 	t.start()
@@ -98,10 +98,10 @@ if __name__ == '__main__':
 		st.header("Type of URL : "+pred)
 		st.subheader("What is a "+pred+" URL?")
 		if (pred!="Benign"):
-			image = Image.open('danger.jpeg')
+			image = Image.open(l+'/GUI/danger.jpeg')
 			st.sidebar.image(image)
 		else:
-			image = Image.open('safe.png')
+			image = Image.open(l+'/GUI/safe.png')
 			st.sidebar.image(image)
 
 		if (pred=="Benign"):
@@ -122,7 +122,7 @@ if __name__ == '__main__':
 
 		st.header("Basis for this prediction")
 		st.text("Any URL can be decomposed into the following subsections:")
-		st.image(Image.open('url.png'))
+		st.image(Image.open(l+'/GUI/url.png'))
 
 		st.text("""
 		.	URL String Characteristics: Features derived from the URL string itself.
