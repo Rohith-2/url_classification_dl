@@ -10,7 +10,6 @@ from tensorflow.keras.models import load_model
 import streamlit as st
 import time
 from PIL import Image
-import tf_agents
 st.set_option('deprecation.showPyplotGlobalUse', False)
 import matplotlib.pyplot as plt
 l = os.getcwd()
@@ -43,15 +42,6 @@ class Timer:
         self._start_time = None
         return (f"Elapsed time: {elapsed_time:0.4f} seconds")
 
-@st.cache(hash_funcs={tf_agents.utils.object_identity.ObjectIdentityDictionary()})
-def load():
-	encoder = LabelEncoder()
-	encoder.classes_ = np.load(l+'/GUI/lblenc_v1.npy',allow_pickle=True)
-	scalerfile = l+'/GUI/scaler.sav'
-	scaler = pickle.load(open(scalerfile, 'rb'))
-	model = load_model(l+'/GUI/Model_v2.h5')
-	return encoder,scaler,model
-
 if __name__ == '__main__':
 	st.title("URL Featurizer and Classification")
 	
@@ -81,7 +71,11 @@ if __name__ == '__main__':
 	for i in order:
 	    test.append(a[i])
 	s1=t.stop()
-	encoder,scaler,model = load()
+	encoder = LabelEncoder()
+	encoder.classes_ = np.load(l+'/GUI/lblenc_v1.npy',allow_pickle=True)
+	scalerfile = l+'/GUI/scaler.sav'
+	scaler = pickle.load(open(scalerfile, 'rb'))
+	model = load_model(l+'/GUI/Model_v2.h5')	
 	test = pd.DataFrame(test).replace(True,1).replace(False,0).to_numpy().reshape(1,-1)
 	t.start()
 	predicted = np.argmax(model.predict(scaler.transform(test)),axis=1)
