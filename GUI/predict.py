@@ -12,7 +12,9 @@ import time
 from PIL import Image
 st.set_option('deprecation.showPyplotGlobalUse', False)
 import matplotlib.pyplot as plt
-
+l = os.getcwd()
+if(l!='/app/url_classification_dl/GUI/'):
+     os.chdir('/app/url_classification_dl/GUI/')
 order = ['bodyLength', 'bscr', 'dse', 'dsr', 'entropy', 'hasHttp', 'hasHttps',
        'has_ip', 'numDigits', 'numImages', 'numLinks', 'numParams',
        'numTitles', 'num_%20', 'num_@', 'sbr', 'scriptLength', 'specialChars',
