@@ -54,8 +54,27 @@ https://share.streamlit.io/rohith-2/url_classification_dl/main/GUI/gui.py
 ![Screenshot 2021-05-21 at 12 18 06 PM](https://user-images.githubusercontent.com/55501708/119094445-a8e87280-ba2e-11eb-8241-56c580f073cb.png)  
 
 ## Data Description via Extracted Features:
-  
-![1_YW3D20o-cXrd-WzdYutUNg](https://user-images.githubusercontent.com/55501708/118959890-5b153100-b980-11eb-8c86-71e42c63329b.png)  
+| Feature Name | Feature Group | Feature Discription|
+| --- | --- | --- |
+| URL Entropy | URL String Characteristics | Entropy of URL |
+| numDigits | URL String Characteristics | Total number of digits in URL string |
+| URL Lenght | URL String Characteristics | Total number of characters in URL string |
+| numParameters | URL String Characteristics | Total number of query parameters in URL |
+| numFragments | URL String Characteristics | Total Number of Fragments in URL |
+| domainExtension | URL String Characteristics | Domian extension |
+| hasHTTP |  URL domain features | Website domain has http protocol |
+| hasHTTPS | URL domain features | Website domain has http protocol |
+| urllsLive | URL domain features | The page is online |
+| daysSinceRegistration | URL domain features | Number of days from today since	domain was registered |
+| daysSinceExpired | URL domain features | Number of days from today since domain expired |
+| bodyLength | URL page fratures | Total number of characters in URL's	HTML page |
+| numTitles | URL page fratures | Total number of HI-H6 titles in URL's	HTML page |
+| numlmages | URL page fratures | Total number of images embedded in URL's	HTML page |
+| numLinks | URL page fratures | Total number of links embedded in URL's	HTML page |
+| scriptLength | URL page fratures | Total number of characters in embedded scripts in URL's HTML page |
+| specialCharacters | URL page fratures | Total number of special characters in URL's	HTML page |
+| scriptToSpecialCharacterRatio | URL page fratures | The ratio of total length of embedded scripts to special characters in HTML page |
+| scriptToBodyRatio | URL page fratures | The ratio of total length of embedded scripts to total number of characters in HTML page |
 
   
 Plot depecting numerous features normalised(ranging from 0 to 1) and the mean of all the classes. 
