@@ -9,7 +9,15 @@ Authors:
 > [Rohith Ramakrishnan](https://github.com/Rohith-2)
 <hr style=\"border:0.5px solid gray\"> </hr>
 
-## Set-Up:
+## Meduim Post:
+https://medium.com/@rrohith2001/url-feature-engineering-and-classification-66c0512fb34d  
+<hr style=\"border:0.5px solid gray\"> </hr>  
+
+## Acknowledgment:  
+__We would like to thank our professor [Premjith B](https://github.com/premjithb) for the assistance and guidance.__  
+ <hr style=\"border:0.5px solid gray\"> </hr> 
+ 
+## Set-Up:  
 __Pre-requisites :__ [conda](https://repo.anaconda.com/) and [git](https://git-scm.com/)     
 *Please Note : All System Paths in the scripts, are coded in UNIX OS format, please convert '/' to "\\\ " for Windows OS.*
 ```
@@ -56,25 +64,29 @@ https://share.streamlit.io/rohith-2/url_classification_dl/main/GUI/gui.py
 ## Data Description via Extracted Features:
 | Feature Name | Feature Group | Feature Discription|
 | --- | --- | --- |
-| URL Entropy | URL String Characteristics | Entropy of URL |
-| numDigits | URL String Characteristics | Total number of digits in URL string |
-| URL Lenght | URL String Characteristics | Total number of characters in URL string |
-| numParameters | URL String Characteristics | Total number of query parameters in URL |
-| numFragments | URL String Characteristics | Total Number of Fragments in URL |
-| domainExtension | URL String Characteristics | Domian extension |
-| hasHTTP |  URL domain features | Website domain has http protocol |
-| hasHTTPS | URL domain features | Website domain has http protocol |
-| urllsLive | URL domain features | The page is online |
-| daysSinceRegistration | URL domain features | Number of days from today since	domain was registered |
-| daysSinceExpired | URL domain features | Number of days from today since domain expired |
-| bodyLength | URL page fratures | Total number of characters in URL's	HTML page |
-| numTitles | URL page fratures | Total number of HI-H6 titles in URL's	HTML page |
-| numlmages | URL page fratures | Total number of images embedded in URL's	HTML page |
-| numLinks | URL page fratures | Total number of links embedded in URL's	HTML page |
-| scriptLength | URL page fratures | Total number of characters in embedded scripts in URL's HTML page |
-| specialCharacters | URL page fratures | Total number of special characters in URL's	HTML page |
-| scriptToSpecialCharacterRatio | URL page fratures | The ratio of total length of embedded scripts to special characters in HTML page |
-| scriptToBodyRatio | URL page fratures | The ratio of total length of embedded scripts to total number of characters in HTML page |
+| `URL Entropy` | URL String Characteristics | Entropy of URL |
+| `numDigits` | URL String Characteristics | Total number of digits in URL string |
+| `URL Lenght` | URL String Characteristics | Total number of characters in URL string |
+| `numParameters` | URL String Characteristics | Total number of query parameters in URL |
+| `numFragments` | URL String Characteristics | Total Number of Fragments in URL |
+| `domainExtension` | URL String Characteristics | Domian extension |
+| `num_%20` | URL String Characteristics | Number of '%20' in URL |
+| `num_@` | URL String Characteristics | Number of '@' in URL |
+| `has_ip` | URL String Characteristics | Occurence of IP in URL |
+| `hasHTTP` |  URL domain features | Website domain has http protocol |
+| `hasHTTPS` | URL domain features | Website domain has http protocol |
+| `urllsLive` | URL domain features | The page is online |
+| `daysSinceRegistration` | URL domain features | Number of days from today since	domain was registered |
+| `daysSinceExpired` | URL domain features | Number of days from today since domain expired |
+| `bodyLength` | URL page fratures | Total number of characters in URL's	HTML page |
+| `numTitles` | URL page fratures | Total number of HI-H6 titles in URL's	HTML page |
+| `numlmages` | URL page fratures | Total number of images embedded in URL's	HTML page |
+| `numLinks` | URL page fratures | Total number of links embedded in URL's	HTML page |
+| `scriptLength` | URL page fratures | Total number of characters in embedded scripts in URL's HTML page |
+| `specialCharacters` | URL page fratures | Total number of special characters in URL's	HTML page |
+| `scriptToSpecialCharacterRatio` | URL page fratures | The ratio of total length of embedded scripts to special characters in HTML page |
+| `scriptToBodyRatio` | URL page fratures | The ratio of total length of embedded scripts to total number of characters in HTML page |
+
 
   
 Plot depecting numerous features normalised(ranging from 0 to 1) and the mean of all the classes. 
@@ -85,7 +97,6 @@ Plot depecting numerous features normalised(ranging from 0 to 1) and the mean of
 
 <hr style=\"border:0.5px solid gray\"> </hr>   
 
-## Acknowledgment:  
-__We would like to thank our professor [Premjith B](https://github.com/premjithb) for the assistance and guidance.__
+
 
 
