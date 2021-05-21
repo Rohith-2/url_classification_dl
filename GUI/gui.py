@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 l = os.getcwd()
 st.write(l)
 if(l!='/app/url_classification_dl/GUI/'):
-     os.chdir('/app/url_classification_dl/GUI/')
+     os.chdir('/app/url_classification_dl/')
 
 order = ['bodyLength', 'bscr', 'dse', 'dsr', 'entropy', 'hasHttp', 'hasHttps',
        'has_ip', 'numDigits', 'numImages', 'numLinks', 'numParams',
