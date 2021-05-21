@@ -85,11 +85,11 @@ https://share.streamlit.io/rohith-2/url_classification_dl/main/GUI/gui.py
 | `scriptLength` | URL page fratures | Total number of characters in embedded scripts in URL's HTML page |
 | `specialCharacters` | URL page fratures | Total number of special characters in URL's	HTML page |
 | `scriptToSpecialCharacterRatio` | URL page fratures | The ratio of total length of embedded scripts to special characters in HTML page |
-| `scriptToBodyRatio` | URL page fratures | The ratio of total length of embedded scripts to total number of characters in HTML page |
+| `scriptToBodyRatio` | URL page fratures | The ratio of total length of embedded scripts to total number of characters in HTML page |  
 
 
   
-Plot depecting numerous features normalised(ranging from 0 to 1) and the mean of all the classes. 
+#### Plot depecting numerous features normalised(ranging from 0 to 1) and the mean of all the classes. 
 ![download](https://user-images.githubusercontent.com/55501708/119180825-6b1b3680-ba8e-11eb-83a1-e68dc29251d6.png)
 
 ## Performance metric:  
