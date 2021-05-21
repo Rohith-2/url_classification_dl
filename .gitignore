@@ -73,3 +73,7 @@ FinalDataset/._feature.csv
 scripts/._DenseNN_Train.py
 FinalDataset/._Feature_Corr.png
 FinalDataset/._Feature_Plot.png
+GUI/._data_creation_v3.py
+GUI/._predict.py
+GUI/__pycache__/data_creation_v3.cpython-38.pyc
+scripts/._predict.py
