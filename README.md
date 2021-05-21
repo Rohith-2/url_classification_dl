@@ -1,6 +1,5 @@
-# Url Feature Extraction & Classification 
-### 19AIE211-Introduction to Computer Networks End Project   
-Using Neural Networks to classify various URLs  
+# Url Feature Extraction & Classification  
+### Using Neural Networks to classify various URLs  
   
 Authors:  
 > [Aaditya Jain](https://github.com/aadityajain1)    
@@ -85,12 +84,12 @@ https://share.streamlit.io/rohith-2/url_classification_dl/main/GUI/gui.py
 | `scriptLength` | URL page fratures | Total number of characters in embedded scripts in URL's HTML page |
 | `specialCharacters` | URL page fratures | Total number of special characters in URL's	HTML page |
 | `scriptToSpecialCharacterRatio` | URL page fratures | The ratio of total length of embedded scripts to special characters in HTML page |
-| `scriptToBodyRatio` | URL page fratures | The ratio of total length of embedded scripts to total number of characters in HTML page |
+| `scriptToBodyRatio` | URL page fratures | The ratio of total length of embedded scripts to total number of characters in HTML page |  
 
 
   
-Plot depecting numerous features normalised(ranging from 0 to 1) and the mean of all the classes. 
-![Feature_Plot](https://user-images.githubusercontent.com/55501708/118984429-1f3b9500-b99b-11eb-8ec3-46e264cb95a4.png)
+#### Plot depecting numerous features normalised(ranging from 0 to 1) and the mean of all the classes. 
+![download](https://user-images.githubusercontent.com/55501708/119180825-6b1b3680-ba8e-11eb-83a1-e68dc29251d6.png)
 
 ## Performance metric:  
 ![Screenshot 2021-05-20 at 6 32 01 PM](https://user-images.githubusercontent.com/55501708/118983160-c1f31400-b999-11eb-8fd9-dd54a204f6d0.png)  
