@@ -42,6 +42,15 @@ class Timer:
         self._start_time = None
         return (f"Elapsed time: {elapsed_time:0.4f} seconds")
 
+@st.cache() 
+def load():
+	encoder = LabelEncoder()
+	encoder.classes_ = np.load(l+'/GUI/lblenc_v1.npy',allow_pickle=True)
+	scalerfile = l+'/GUI/scaler.sav'
+	scaler = pickle.load(open(scalerfile, 'rb'))
+	model = load_model(l+'/GUI/Model_v2.h5')
+	return encoder,scaler,model
+
 if __name__ == '__main__':
 	st.title("URL Featurizer and Classification")
 	
@@ -63,22 +72,21 @@ if __name__ == '__main__':
             .    Ankam Srikanth
             .    Rohith Ramakrishnan
         """)
-
+	t = Timer()
 	user_input = st.text_input("Enter URL:")
+	t.start()
 	a = d.UrlFeaturizer(user_input).run()
 	test = []
 	for i in order:
 	    test.append(a[i])
-	encoder = LabelEncoder()
-	encoder.classes_ = np.load(l+'/GUI/lblenc_v1.npy',allow_pickle=True)
-	scalerfile = l+'/GUI/scaler.sav'
-	scaler = pickle.load(open(scalerfile, 'rb'))
-	model = load_model(l+'/GUI/Model_v2.h5')#, custom_objects={'f1_m':f1_m,"precision_m":precision_m, "recall_m":recall_m})
+	s1=t.stop()
+	encoder,scaler,model = load()
 	test = pd.DataFrame(test).replace(True,1).replace(False,0).to_numpy().reshape(1,-1)
-	t = Timer()
 	t.start()
 	predicted = np.argmax(model.predict(scaler.transform(test)),axis=1)
 	s = t.stop()
+	st.sidebar.text("Feature Extraction:")
+	st.sidebar.text(str(s1))
 	st.sidebar.text("Prediction :")
 	st.sidebar.text(str(s))
 
