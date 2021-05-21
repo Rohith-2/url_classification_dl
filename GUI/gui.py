@@ -42,7 +42,7 @@ class Timer:
         self._start_time = None
         return (f"Elapsed time: {elapsed_time:0.4f} seconds")
 
-@st.cache() 
+@st.cache(hash_funcs={tensorflow.python.keras.utils.object_identity.ObjectIdentityDictionary: my_hash_func})
 def load():
 	encoder = LabelEncoder()
 	encoder.classes_ = np.load(l+'/GUI/lblenc_v1.npy',allow_pickle=True)
