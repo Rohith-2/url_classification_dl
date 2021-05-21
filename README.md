@@ -38,8 +38,7 @@ Testing:
 cd scripts/
 python predict.py
 ``` 
-If you only wish to use the pre-trained model, please check [releases](https://github.com/Rohith-2/url_classification_dl/releases)  
-<hr style=\"border:0.5px solid gray\"> </hr>    
+If you only wish to use the pre-trained model, please check [releases](https://github.com/Rohith-2/url_classification_dl/releases)    
 
 Running the GUI locally:
 ```
@@ -47,6 +46,7 @@ cd GUI/
 streamlit run predict.py
 ```
 *All the above commands are from the home(url_classification_dl) folder*  
+<hr style=\"border:0.5px solid gray\"> </hr>   
   
 ## GUI:  
 https://share.streamlit.io/rohith-2/url_classification_dl/main/GUI/gui.py 
