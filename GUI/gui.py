@@ -13,7 +13,6 @@ from PIL import Image
 st.set_option('deprecation.showPyplotGlobalUse', False)
 import matplotlib.pyplot as plt
 l = os.getcwd()
-st.write(l)
 
 order = ['bodyLength', 'bscr', 'dse', 'dsr', 'entropy', 'hasHttp', 'hasHttps',
        'has_ip', 'numDigits', 'numImages', 'numLinks', 'numParams',
