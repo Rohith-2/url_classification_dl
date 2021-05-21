@@ -36,7 +36,7 @@ The output of the trained model is exported to the [models](https://github.com/R
 Testing:
 ```
 cd scripts/
-python predict.py
+python predict_args.py -i <url>
 ``` 
 If you only wish to use the pre-trained model, please check [releases](https://github.com/Rohith-2/url_classification_dl/releases)    
 
