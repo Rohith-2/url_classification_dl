@@ -49,7 +49,7 @@ streamlit run predict.py
 *All the above commands are from the home(url_classification_dl) folder*  
   
 ## GUI:  
-https://share.streamlit.io/rohith-2/url_classification_dl/main/GUI/predict.py  
+https://share.streamlit.io/rohith-2/url_classification_dl/main/GUI/gui.py 
 
 ![Screenshot 2021-05-21 at 12 18 06 PM](https://user-images.githubusercontent.com/55501708/119094445-a8e87280-ba2e-11eb-8241-56c580f073cb.png)  
 
