@@ -10,3 +10,4 @@ sklearn
 jedi
 keras
 tensorflow
+streamlit

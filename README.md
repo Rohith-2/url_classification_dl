@@ -1,5 +1,7 @@
 # Url Feature Extraction & Classification 
 ### 19AIE211-Introduction to Computer Networks End Project   
+Using Neural Networks to classify various URLs  
+  
 Authors:  
 > [Aaditya Jain](https://github.com/aadityajain1)    
 > [Anirudh Bhaskar](https://github.com/AnirudhBhaskar21)    
@@ -13,7 +15,7 @@ __Pre-requisites :__ [conda](https://repo.anaconda.com/) and [git](https://git-s
 ```
 git clone https://github.com/Rohith-2/url_classification_dl.git
 cd url_classification_dl
-conda create -n pyenv python=3.8
+conda create -n pyenv python=3.8.5
 conda activate pyenv
 pip install -r requirements.txt
 ```
@@ -27,10 +29,16 @@ The features extracted are explained and visualised in this [Notebook](https://g
 Training:
 ```
 cd scripts/
-python DenseNN_Train.py
+python nn_Training.py
 ```
 The output of the trained model is exported to the [models](https://github.com/Rohith-2/url_classification_dl/blob/main/models).  
-    
+  
+Testing:
+```
+cd scripts/
+python predict.py
+``` 
+If you only wish to use the pre-trained model, please check [releases](https://github.com/Rohith-2/url_classification_dl/releases)  
 <hr style=\"border:0.5px solid gray\"> </hr>    
   
 ## Data Description via Extracted Features:
