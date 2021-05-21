@@ -1,5 +1,6 @@
 pandas
 datetime
+matplotlib
 python-whois-extended
 numpy
 tqdm

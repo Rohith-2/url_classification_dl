@@ -40,7 +40,19 @@ python predict.py
 ``` 
 If you only wish to use the pre-trained model, please check [releases](https://github.com/Rohith-2/url_classification_dl/releases)  
 <hr style=\"border:0.5px solid gray\"> </hr>    
+
+Running the GUI locally:
+```
+cd GUI/
+streamlit run predict.py
+```
+*All the above commands are from the home(url_classification_dl) folder*  
   
+## GUI:  
+https://share.streamlit.io/rohith-2/url_classification_dl/main/GUI/predict.py  
+
+![Screenshot 2021-05-21 at 12 18 06 PM](https://user-images.githubusercontent.com/55501708/119094445-a8e87280-ba2e-11eb-8241-56c580f073cb.png)  
+
 ## Data Description via Extracted Features:
   
 ![1_YW3D20o-cXrd-WzdYutUNg](https://user-images.githubusercontent.com/55501708/118959890-5b153100-b980-11eb-8c86-71e42c63329b.png)  
