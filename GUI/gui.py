@@ -156,7 +156,7 @@ if __name__ == '__main__':
 		st.header("Extracted Features vs Safe URL")
 		st.text("Given below are the features extracted from the URL and the values of these features are plotted along x-axis with the features on the y-axis.")
 		plt.figure(figsize=(12,12))
-		plt.plot(scaler.transform(test)[0],order,color='red', marker='>',linewidth=0.65,linestyle=":",alpha=0.5)
+		plt.plot(test[0],order,color='red', marker='>',linewidth=0.65,linestyle=":",alpha=0.5)
 		plt.plot(ben,order,marker='o',linewidth=0.65,linestyle="--",alpha=0.5)
 		plt.legend(["Extracted Features","Avg Safe URL"])
 		plt.title("Variation of features for different types of URLs")
