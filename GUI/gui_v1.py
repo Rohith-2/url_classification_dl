@@ -75,31 +75,11 @@ if __name__ == '__main__':
 	encoder.classes_ = np.load(l+'/GUI/lblenc_v1.npy',allow_pickle=True)
 	scalerfile = l+'/GUI/scaler.sav'
 	scaler = pickle.load(open(scalerfile, 'rb'))
-
-	st.sidebar.write("_______________")
-	genre = st.sidebar.radio(
-	     "Please Select Your Model:",
-	     ('TF', 'TF-Lite'))
-
-	if (genre=='TF'):
-		model = load_model(l+'/GUI/Model_v2.h5')	
-		test = scaler.transform(pd.DataFrame(test).replace(True,1).replace(False,0).to_numpy().reshape(1,-1))
-		t.start()
-		predicted = np.argmax(model.predict(test),axis=1)
-		s = t.stop()
-	else:
-		interpreter = tf.lite.Interpreter(model_path=l+"/GUI/tflite_quant_model.tflite")
-		interpreter.allocate_tensors()
-		input_details = interpreter.get_input_details()
-		output_details = interpreter.get_output_details()
-		test = scaler.transform(pd.DataFrame(test).replace(True,1).replace(False,0).to_numpy(dtype="float32").reshape(1,-1))
-		interpreter.set_tensor(input_details[0]['index'], test)
-		t.start()
-		interpreter.invoke()
-		output_data = interpreter.get_tensor(output_details[0]['index'])
-		s = t.stop()
-		predicted = np.argmax(output_data,axis=1)
-	st.sidebar.write("_______________")
+	model = load_model(l+'/GUI/Model_v2.h5')	
+	test = pd.DataFrame(test).replace(True,1).replace(False,0).to_numpy().reshape(1,-1)
+	t.start()
+	predicted = np.argmax(model.predict(scaler.transform(test)),axis=1)
+	s = t.stop()
 	st.sidebar.text("Feature Extraction:")
 	st.sidebar.text(str(s1))
 	st.sidebar.text("Prediction :")
