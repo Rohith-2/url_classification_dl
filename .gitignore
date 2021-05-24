@@ -83,3 +83,9 @@ GUI/._danger.jpeg
 GUI/._gui.py
 scripts/._predict_args.py
 Notebook/._nn_testing.ipynb
+FinalDataset/URL/Benign_list_big_final.csv
+FinalDataset/URL/Defacement.csv
+FinalDataset/URL/DefacementSitesURLFiltered.csv
+FinalDataset/URL/Malware_dataset.csv
+FinalDataset/URL/phishing_dataset.csv
+FinalDataset/URL/spam_dataset.csv
