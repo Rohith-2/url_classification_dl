@@ -89,3 +89,4 @@ FinalDataset/URL/DefacementSitesURLFiltered.csv
 FinalDataset/URL/Malware_dataset.csv
 FinalDataset/URL/phishing_dataset.csv
 FinalDataset/URL/spam_dataset.csv
+*.ipynb linguist-detectable=false
