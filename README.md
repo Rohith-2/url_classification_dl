@@ -56,7 +56,7 @@ streamlit run predict.py
 <hr style=\"border:0.5px solid gray\"> </hr>   
   
 ## GUI:  
-https://share.streamlit.io/rohith-2/url_classification_dl/main/GUI/gui.py 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/rohith-2/url_classification_dl/main/GUI/gui.py)  
 
 ![Screenshot 2021-05-21 at 12 18 06 PM](https://user-images.githubusercontent.com/55501708/119094445-a8e87280-ba2e-11eb-8241-56c580f073cb.png)  
 
