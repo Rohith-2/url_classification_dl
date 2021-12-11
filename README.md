@@ -96,6 +96,9 @@ streamlit run predict.py
 
 <hr style=\"border:0.5px solid gray\"> </hr>   
 
+## License
+The feature_data.csv file is licensed under a Creative Commons Attribution 4.0 International License.
+
 
 
 
